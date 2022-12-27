@@ -1,4 +1,4 @@
-# yeshotties (test)
+# yeshotties
 
 # By the pages:
 https://pashakiz.github.io/yeshotties/dist/index.html
