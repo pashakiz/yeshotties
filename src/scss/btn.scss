@@ -1,0 +1,155 @@
+.btn {
+  width: 100%;
+  height: 46px;
+  padding: 13px 10px;
+  border-radius: 0;
+  background-color: $btn_bg_color;
+  border: none;
+  font-family: $font_family;
+  font-size: 17px;
+  font-weight: 700;
+  color: $font_color3;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  &:hover {
+    color: $font_color3;
+    background-color: $btn_bg_color_hover;
+  }
+  &:active {
+    color: $font_color3 !important;
+    background-color: $btn_bg_color_active !important;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  @media (min-width: 992px) {
+    width: auto;
+    height: 88px;
+    font-size: 28px;
+    padding: 27px 15px;
+  }
+
+  .btn__icon {
+    width: 18px;
+    height: 18px;
+    margin-left: 5px;
+  }
+
+  .btn__icon_p {
+    fill: $font_color;
+  }
+
+  &.btn_1 { //index
+    display: block;
+    width: 100%;
+    max-width: 538px;
+    @media (min-width: 992px) {
+      width: auto;
+      height: 46px;
+      font-size: 17px;
+      padding: 13px 30px;
+    }
+    @media (min-width: 1400px) {
+      width: 100%;
+      max-width: 405px;
+      margin: 0;
+      height: 88px;
+      font-size: 28px;
+      padding: 27px 15px;
+    }
+  }
+
+  &.btn-login {
+    @media (min-width: 992px) {
+      height: 46px;
+      padding: 13px 10px;
+      font-size: 17px;
+    }
+    @media (min-width: 1200px) {
+      width: auto;
+      height: 88px;
+      font-size: 28px;
+      padding: 27px 15px;
+    }
+    @media (min-width: 1400px) {
+      width: auto;
+      height: 88px;
+      font-size: 28px;
+      padding: 27px 15px;
+    }
+  }
+
+  &.btn_2 { //user list
+    width: 100%;
+    height: 31px;
+    font-size: 11px;
+    padding: 10px 10px;
+    @media (min-width: $user_list_item_breakpoint) {
+      height: 59px;
+      font-size: 21px;
+      padding: 19px 15px;
+    }
+  }
+
+  &.btn_3 { //change photo
+    width: 159px;
+    height: 30px;
+    padding: 5px 5px;
+    border-radius: 0;
+    font-family: $font_family;
+    font-weight: 400;
+    font-size: 15px;
+    background-color: $btn_bg_color_active;
+    color: $font_color4;
+    text-transform: uppercase;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background-color: $btn_bg_color_hover;
+      color: $font_color4 !important;
+    }
+    &:active {
+      background-color: $btn_bg_color !important;
+      color: $font_color4 !important;
+    }
+    @media (min-width: 992px) {}
+    @media (min-width: 1200px) {
+      font-size: 22px;
+      padding: 15px 15px;
+      width: 329px;
+      height: 70px;
+    }
+  }
+
+  &.btn_4 { //signout
+    height: 60px;
+    padding: 22px 10px;
+    border-radius: 15px;
+    font-size: 16px;
+    background-color: $bg_light_2;
+    color: $font_color;
+    border: none;
+    &:hover {
+      background-color: $btn_bg_color_hover;
+      color: $font_color2;
+    }
+    @media (min-width: 992px) {}
+    @media (min-width: 1200px) {
+      font-size: 24px;
+      padding: 21px 15px;
+      width: 280px;
+      height: 66px;
+    }
+  }
+
+  &.btn_w100 {
+    width: 100%;
+  }
+}

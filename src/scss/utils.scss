@@ -1,0 +1,97 @@
+.form-group_index {
+  margin-bottom: 37px;
+  @media (min-width: 768px) {
+    margin-bottom: 37px;
+  }
+}
+
+.form-group_login {
+  width: 100%;
+  margin-bottom: 17px;
+  @media (min-width: 992px) {
+    margin-bottom: 17px;
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 25px;
+  }
+  @media (min-width: 1500px) {
+    margin-bottom: 27px;
+  }
+  @media (min-width: 1920px) {
+    margin-bottom: 30px;
+  }
+}
+
+.form-group_login-btn {
+  margin: 17px 0 0;
+  position: relative;
+  @media (min-width: 992px) {
+    margin: 20px 0 0;
+  }
+  @media (min-width: 1200px) {
+    margin: 29px 0 0;
+  }
+  @media (min-width: 1500px) {
+    margin: 29px 0 0;
+  }
+  @media (min-width: 1920px) {
+    margin: 35px 0 0;
+  }
+}
+
+.form-group_input {
+  margin-bottom: 26px;
+  @media (min-width: 1200px) {
+    margin-bottom: 34px;
+  }
+}
+
+.form-group_check1 {
+  margin: 37px 0 35px;
+  @media (min-width: 992px) {
+    margin: 37px 0 35px;
+  }
+  @media (min-width: 1200px) {
+    margin: 44px 0 36px;
+  }
+}
+
+.form-group_check {
+  margin: 31px 0 31px;
+  @media (min-width: 992px) {
+    margin: 34px 0 42px;
+  }
+}
+
+.form-group_btn-unsuscr {
+  margin-top: 55px;
+  @media (min-width: 768px) {
+    margin-top: 100px;
+  }
+}
+
+.word-break {
+  word-break: break-word;
+}
+
+.d-xxl-none {
+  @media (min-width: 1500px) {
+    display: none !important;
+  }
+}
+.d-xxl-block {
+  @media (min-width: 1500px) {
+    display: block !important;
+  }
+}
+.d-xxxl-block {
+  @media (min-width: 1920px) {
+    display: block !important;
+  }
+}
+
+.mb-xl-68 {
+  @media (min-width: 1200px) {
+    margin-bottom: 68px;
+  }
+}

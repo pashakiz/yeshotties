@@ -1,0 +1,304 @@
+.userprofile {
+  position: relative;
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+.userprofile__photo {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  @media (min-width: 400px) {
+    max-width: 320px;
+  }
+  @media (min-width: 768px) {
+    max-width: 640px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 500px;
+    margin: 0 76px 0 0;
+  }
+  @media (min-width: 1400px) {
+    max-width: 640px;
+    margin: 0 100px 0 0;
+  }
+}
+
+.userprofile-img {
+  width: 100%;
+  max-width: 100%;
+  height: 368px;
+  max-height: 368px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  @media (min-width: 400px) {
+    max-width: 320px;
+    height: 294px;
+    max-height: 294px;
+  }
+  @media (min-width: 768px) {
+    max-width: 640px;
+    max-height: 582px;
+    height: 582px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 500px;
+    max-height: 455px;
+    height: 455px;
+  }
+  @media (min-width: 1400px) {
+    max-width: 640px;
+    max-height: 582px;
+    height: 582px;
+  }
+}
+
+
+.userprofile__btn {
+  transform: translateY(-6px);
+  margin-bottom: -6px;
+  @media (min-width: 992px) {
+    transform: translateY(-20px);
+    margin-bottom: -20px;
+  }
+}
+
+.userprofile__info {
+  width: 100%;
+  margin: 0 auto;
+  @media (min-width: 400px) {
+    max-width: 320px;
+  }
+  @media (min-width: 768px) {
+    max-width: 640px;
+    padding: 0;
+  }
+  @media (min-width: 1200px) {
+    border-radius: 26px 26px 0 0;
+    margin: 0;
+  }
+}
+
+.userprofile__data {
+  padding: 21px 15px 65px;
+  background-color: $bg_light_1;
+  @media (min-width: 768px) {
+    padding: 35px 60px 65px;
+  }
+  @media (min-width: 1200px) {
+    border-radius: 26px 26px 0 0;
+  }
+}
+
+.userprofile__row {
+  color: $font_color2;
+  font-family: $font_family;
+  line-height: 1;
+  margin-bottom: 27px;
+  text-align: center;
+  @media (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    margin-bottom: 38px;
+  }
+}
+
+.userprofile__name {
+  font-family: $font_family2;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 30px;
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+  @media (min-width: 1200px) {
+    font-size: 32px;
+    margin: 0;
+  }
+}
+.userprofile__age {
+  display: inline-block;
+  padding-left: 15px;
+  transform: translateY(-4px);
+  @media (min-width: 1200px) {
+    transform: translateY(-6px);
+  }
+}
+
+.userprofile__sep {
+  @media (min-width: 1200px) {
+    width: 8px;
+    height: 8px;
+    background-color: $body_bg_color;
+    margin: 0 16px;
+  }
+}
+
+.userprofile__loc {
+  font-family: $font_family;
+  font-weight: 400;
+  font-size: 15px;
+  @media (min-width: 1200px) {
+    font-size: 17px;
+  }
+}
+
+.compatibility {
+  &.compatibility_mb {
+    padding-bottom: 76px;
+    @media (min-width: 1200px) {
+      padding-bottom: 54px;
+    }
+  }
+  .compatibility__progress {
+    &.progress {
+      border-radius: 0;
+      background-color: $bg_light_2;
+      width: 80px;
+      height: 28px;
+      position: relative;
+      @media (min-width: 1200px) {
+        width: 90px;
+        height: 28px;
+      }
+      .progress-bar {
+        color: $font_color2;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 15px;
+        background-color: $btn_bg_color;
+        @media (min-width: 1200px) {
+          font-size: 16px;
+        }
+        .progress-title {
+          position: absolute;
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .compatibility__title {
+    font-family: $font_family2;
+    color: $font_color2;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    @media (min-width: $user_list_item_breakpoint) {
+      font-size: 16px;
+      margin-bottom: 17px;
+    }
+  }
+
+  &.compatibility_list {
+    padding: 0 10px 14px;
+    @media (min-width: $user_list_item_breakpoint) {
+      padding: 0 20px 38px;
+    }
+    .compatibility__progress {
+      &.progress {
+        width: 34px;
+        height: 13px;
+        @media (min-width: $user_list_item_breakpoint) {
+          width: 90px;
+          height: 28px;
+        }
+        .progress-bar {
+          font-size: 7px;
+          @media (min-width: $user_list_item_breakpoint) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .compatibility__title {
+      font-size: 6px;
+      margin-bottom: 6px;
+      @media (min-width: $user_list_item_breakpoint) {
+        font-size: 16px;
+        margin-bottom: 17px;
+      }
+    }
+  }
+
+  &.compatibility_login {}
+}
+
+.user-profile-title {
+  font-family: $font_family;
+  color: $font_color;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  margin-bottom: 25px;
+  //text-transform: uppercase;
+  @media (min-width: 992px) {}
+  @media (min-width: 1200px) {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  &.user-profile-title_about {
+    color: $btn_bg_color;
+    font-size: 22px;
+    margin-bottom: 22px;
+    @media (min-width: 992px) {}
+    @media (min-width: 1200px) {
+      font-size: 32px;
+      margin-bottom: 13px;
+    }
+  }
+}
+
+.user-profile-about {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+  position: relative;
+  padding: 42px 20px 20px;
+  background-color: $body_bg_color;
+  border-radius: 26px;
+  transform: translateY(-26px);
+  @media (min-width: 768px) {
+    padding: 43px 60px 40px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  p {
+    color: $font_color;
+    line-height: 26px;
+    @media (min-width: 992px) {
+      color: $font_color;
+      line-height: 24px;
+    }
+  }
+}
+
+.user-profile-gallery {
+  margin: 45px 0 20px;
+  flex-wrap: wrap;
+  .user-profile-gallery__item {
+    width: 111px;
+    height: 144px;
+    border-radius: 100px;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 0;
+  }
+  .user-profile-gallery__img {
+    width: 100%;
+    height: auto;
+  }
+}
+

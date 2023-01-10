@@ -1,0 +1,51 @@
+<%= _.template(require('./../includes/header-index.html'))() %>
+  <main class="main">
+    <header class="firstscreen">
+      <div class="firstscreen__bg bg3"></div>
+      <div class="firstscreen__content">
+        <div class="container container_xxxl">
+          <div class="firstscreen__content-inner">
+            <div class="firstscreen__info firstscreen__info1" style="display: block;">
+              <div class="firstscreen__header">
+                <div class="logo logo_main">Grand<span>Hook</span>Up</div>
+              </div>
+              <div class="h1-index">
+                <div class="h1-index__row1">Good girls</div>
+                <div class="h1-index__row2"><span>gonna</span> GO bad</div>
+                <div class="h1-index__row3">Here</div>
+              </div>
+              <button class="btn btn_1 btn-index">Unlock My Matches</button>
+            </div>
+            <div class="firstscreen__info firstscreen__info2" style="display: none;">
+              <div class="firstscreen__header">
+                <div class="logo logo_main">Grand<span>Hook</span>Up</div>
+              </div>
+              <div class="h1_search">Searching<br><span class="colortitle1">your best</span> matches</div>
+              <div class="search-progress progress">
+                <div class="search-progress__title">
+                  <span class="search-progress__span search-progress__span1" style="display: inline">by locations</span>
+                  <span class="search-progress__span search-progress__span2" style="display: none">by interests</span>
+                  <span class="search-progress__span search-progress__span3" style="display: none">by gender match</span>
+                </div>
+                <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="secondscreen secondscreen_1" style="display: block;">
+      <div class="container container_lg">
+        <h2 class="h2_index"><span class="colortitle2">Release</span>&nbsp;My<br><span class="h2_index2row">combinations</span></h2>
+        <p class="pmain">We have created a unique combination system that consists of three main factors that produce
+          similarity of thought and productive connections: Life, freedom and culture. NF, in an abbreviated
+          form, connects people who have interests in similar activities, passions and future aspirations. We
+          also add our own personal touch to the online dating process ensuring that your experience is
+          special and exclusive to you.</p>
+        <p class="pmain">Instead of spending weeks looking for your best combination, we send you a personalized combination
+          every day by email. As these presentations have been carefully selected based on your NF (Life,
+          Freedom and Culture) score, you can spend more time talking or planning your first night out.</p>
+      </div>
+    </section>
+  </main>
+<%= _.template(require('./../includes/footer.html'))() %>

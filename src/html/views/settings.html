@@ -1,0 +1,69 @@
+<%= _.template(require('./../includes/header.html'))() %>
+  <main class="main">
+    <div class="container">
+      <form action="">
+        <div class="row">
+          <div class="col-12 col-xl-6">
+            <div class="settings-photo">
+              <div class="profile-photo">
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="customFile">
+                  <label class="custom-file-area d-flex align-items-center justify-content-center" for="customFile">
+                    <span class="btn btn_3">Change Avatar</span>
+                  </label>
+                </div>
+              </div>
+              <div class="text-center">
+                <a href="#" class="link2 d-none d-xl-inline-block">Sign Out</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-6">
+            <div class="settings-form">
+              <div class="form-group form-group_input">
+                <input class="form-control" type="text" placeholder="Age">
+              </div>
+              <div class="form-group form-group_input">
+                <input class="form-control" type="text" placeholder="Full Name">
+              </div>
+              <div class="form-group form-group_check1 d-flex justify-content-start align-items-center">
+                <div class="customcheck customcheck_radio customcheck_radio-inline">
+                  <input type="radio" class="customcheck__input" name="radio1" id="radio1" checked autocomplete="off">
+                  <label class="customcheck__label" for="radio1">
+                    <div class="customcheck__icon"><div class="customcheck__mark"></div></div>
+                    <div class="customcheck__txt">Female</div>
+                  </label>
+                </div>
+                <div class="customcheck customcheck_radio customcheck_radio-inline">
+                  <input type="radio" class="customcheck__input" name="radio1" id="radio2" autocomplete="off">
+                  <label class="customcheck__label" for="radio2">
+                    <div class="customcheck__icon"><div class="customcheck__mark"></div></div>
+                    <div class="customcheck__txt">Male</div>
+                  </label>
+                </div>
+              </div>
+              <div class="form-group form-group_input">
+                <textarea class="form-control" placeholder="About"></textarea>
+              </div>
+              <div class="form-group form-group_check">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="customcheck customcheck_switch customcheck_switch-inline">
+                    <input type="checkbox" class="customcheck__input" name="check1" id="switch1" autocomplete="off">
+                    <label class="customcheck__label" for="switch1">
+                      <div class="customcheck__icon"><div class="customcheck__mark"></div></div>
+                      <div class="customcheck__txt">Notify me of site updates</div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn_w100 settings__btn">Save Preferences</button>
+              <div class="text-center">
+                <a href="#" class="link2 d-xl-none">Sign Out</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </main>
+<%= _.template(require('./../includes/footer.html'))() %>

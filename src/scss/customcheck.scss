@@ -1,0 +1,227 @@
+//checkbox
+$cc_font_color: $font_color;
+$cc_icon_color: $btn_bg_color;
+$cc_font_size_mob: 15px;
+$cc_font_size: 22px;
+
+$cc_icon_width_mob: 30px;
+$cc_icon_height_mob: 30px;
+$cc_icon_width: 47px;
+$cc_icon_height: 47px;
+$cc_icon_right_mob: 19px;
+$cc_icon_right: 26px;
+
+$cc_mark_width_mob: 12px;
+$cc_mark_height_mob: 12px;
+$cc_mark_width: 15px;
+$cc_mark_height: 15px;
+
+//switcher
+$cs_font_color: $font_color;
+$cs_icon_color: $btn_bg_color;
+$cs_font_size_mob: 15px;
+$cs_font_size: 16px;
+
+$cs_icon_width_mob: 48px;
+$cs_icon_height_mob: 14px;
+$cs_icon_width: 70px;
+$cs_icon_height: 20px;
+$cs_icon_right_mob: 31px;
+$cs_icon_right: 37px;
+
+$cs_mark_width_mob: 28px;
+$cs_mark_height_mob: 28px;
+$cs_mark_width: 40px;
+$cs_mark_height: 40px;
+
+$cs_mark_color_off: $font_color;
+$cs_mark_color_on: $cs_icon_color;
+
+//switcher inline
+$csi_font_size_mob: 15px;
+$csi_font_size: 22px;
+$csi_icon_right_mob: 17px;
+$csi_icon_right: 40px;
+
+.customcheck {
+  display: block;
+  margin-bottom: 10px;
+
+  .customcheck__label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    background-color: transparent;
+    border-radius: 0;
+    color: $cc_font_color;
+    font-size: $cc_font_size_mob;
+    @media (min-width: 992px) {
+      font-size: $cc_font_size;
+    }
+    &:hover {
+      background-color: inherit;
+      color: inherit;
+      cursor: pointer;
+    }
+
+    .customcheck__icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: $cc_icon_height_mob;
+      width: $cc_icon_width_mob;
+      min-width: $cc_icon_width_mob;
+      border: 1px solid $cc_icon_color;
+      background-color: transparent;
+      margin-right: $cc_icon_right_mob;
+      @media (min-width: 992px) {
+        height: $cc_icon_height;
+        width: $cc_icon_width;
+        min-width: $cc_icon_width;
+        border: 3px solid $cc_icon_color;
+        margin-right: $cc_icon_right;
+      }
+
+      .customcheck__mark {
+        display: block;
+        width: $cc_mark_width_mob;
+        height: $cc_mark_height_mob;
+        background-color: transparent;
+        transition: transform .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        @media (min-width: 992px) {
+          width: $cc_mark_width;
+          height: $cc_mark_height;
+        }
+      }
+    }
+    .customcheck__txt {
+      color: $cc_font_color;
+    }
+  }
+
+  .customcheck__input {
+    position: absolute;
+    clip: rect(0,0,0,0);
+    pointer-events: none;
+    &:checked + .customcheck__label {
+      .customcheck__icon {
+        .customcheck__mark {
+          background-color: $cc_icon_color;
+        }
+      }
+      .customcheck__txt {
+        color: $cc_font_color;
+      }
+    }
+  }
+
+}
+
+.customcheck_radio {
+  .customcheck__label {
+    text-transform: uppercase;
+  }
+}
+
+.customcheck_radio-inline {
+  margin: 0;
+  + .customcheck_radio-inline {
+    margin: 0 0 0 63px;
+    @media (min-width: 992px) {
+      margin: 0 0 0 71px;
+    }
+  }
+}
+
+.customcheck_switch {
+  .customcheck__label {
+    align-items: flex-start;
+    line-height: 24px;
+    font-size: $cs_font_size_mob;
+    margin-bottom: 40px;
+    @media (min-width: 992px) {
+      font-size: $cs_font_size;
+      margin-bottom: 64px;
+    }
+    .customcheck__icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: $cs_icon_height_mob;
+      width: $cs_icon_width_mob;
+      min-width: $cs_icon_width_mob;
+      border: 1px solid $cs_icon_color;
+      background-color: transparent;
+      margin-right: $cs_icon_right_mob;
+      margin-top: $cs_mark_height_mob / 4;
+      margin-bottom: $cs_mark_height_mob / 4;
+      @media (min-width: 992px) {
+        height: $cs_icon_height;
+        width: $cs_icon_width;
+        min-width: $cs_icon_width;
+        border: 3px solid $cs_icon_color;
+        margin-right: $cs_icon_right;
+        margin-top: $cs_mark_height / 4;
+        margin-bottom: $cs_mark_height / 4;
+      }
+
+      .customcheck__mark {
+        display: block;
+        width: $cs_mark_width_mob;
+        height: $cs_mark_height_mob;
+        background-color: $cs_mark_color_off;
+        transform: translateX(-11px);
+        @media (min-width: 992px) {
+          width: $cs_mark_width;
+          height: $cs_mark_height;
+          transform: translateX(-15px);
+        }
+      }
+    }
+    .customcheck__txt {
+      padding-top: 3px;
+      @media (min-width: 992px) {
+        padding-top: 8px;
+      }
+    }
+  }
+
+  .customcheck__input {
+    &:checked + .customcheck__label {
+      .customcheck__icon {
+        .customcheck__mark {
+          background-color: $cs_mark_color_on;
+          transform: translateX(11px);
+          @media (min-width: 992px) {
+            transform: translateX(15px);
+          }
+        }
+      }
+      .customcheck__txt {
+        color: $cs_font_color;
+      }
+    }
+  }
+
+}
+
+.customcheck_switch-inline {
+  margin: 0;
+
+  .customcheck__label {
+    text-transform: uppercase;
+    line-height: 24px;
+    font-size: $csi_font_size_mob;
+    margin-bottom: 0;
+    @media (min-width: 992px) {
+      font-size: $csi_font_size;
+    }
+
+    .customcheck__icon {
+      margin-right: $csi_icon_right_mob;
+      @media (min-width: 992px) {
+        margin-right: $csi_icon_right;
+      }
+    }
+  }
+}

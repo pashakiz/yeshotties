@@ -1,0 +1,187 @@
+.user-list-wrap {}
+
+.user-list-extra-wrap {
+  padding: 40px 0 0;
+  @media (min-width: 1200px) {
+    padding: 90px 0 0;
+  }
+}
+
+.user-list-item {
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  @media (min-width: $user_list_item_breakpoint) {
+    width: 360px;
+  }
+
+  .user-list-item__pic {
+    width: 130px;
+    max-width: 130px;
+    min-width: 130px;
+    height: 120px;
+    max-height: 120px;
+    margin: 0 auto;
+    overflow: hidden;
+    @media (min-width: $user_list_item_breakpoint) {
+      width: 360px;
+      max-width: 360px;
+      min-width: 360px;
+      height: 317px;
+      max-height: 317px;
+    }
+    .user-list-item__img {
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: cover;
+      position: relative;
+
+      @include img-mask('../img/photos/mask1.svg', 0, 0, 100%, 100%, auto, 0% 0%);
+    }
+  }
+
+  .user-list-item__btn {}
+
+  .user-list-item__inf {
+    width: 100%;
+    position: relative;
+    background-color: $bg_light_1;
+    transform: translateY(-10px);
+    z-index: 2;
+    @media (min-width: $user_list_item_breakpoint) {
+      transform: translateY(-55px);
+    }
+  }
+
+  .user-list-item__row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 10px 15px;
+    @media (min-width: $user_list_item_breakpoint) {
+      padding: 25px 20px 27px;
+    }
+
+    .user-list-item__name {
+      font-family: $font_family2;
+      font-weight: 600;
+      font-style: italic;
+      color: $font_color2;
+      line-height: 1;
+      font-size: 15px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      @media (min-width: $user_list_item_breakpoint) {
+        font-size: 32px;
+        margin-bottom: 15px;
+      }
+    }
+
+    .user-list-item__age {
+      display: inline-block;
+      padding-left: 6px;
+      transform: translateY(-2px);
+      @media (min-width: $user_list_item_breakpoint) {
+        padding-left: 15px;
+        transform: translateY(-6px);
+      }
+    }
+
+    .user-list-item__loc {
+      font-family: $font_family;
+      font-weight: 400;
+      color: $font_color2;
+      line-height: 1;
+      font-size: 9px;
+      @media (min-width: $user_list_item_breakpoint) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .user-list-item__icon { /*del*/
+    width: 23px;
+    height: 29px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100%;
+    background-image: url('../img/icons/chain.svg');
+    z-index: 5;
+    @media (min-width: $user_list_item_breakpoint) {
+      width: 53px;
+      height: 65px;
+    }
+  }
+
+  &.user-list-item_extra {
+    margin: 0 0 5px;
+    @media (min-width: 430px) {
+      margin: 0 5px 5px;
+    }
+    @media (min-width: 460px) {
+      margin: 0 10px 5px;
+    }
+    @media (min-width: 490px) {
+      margin: 0 15px 5px;
+    }
+
+    .user-list-item__pic {
+      .user-list-item__img {
+        &::after {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba($body_bg_color, 0.8);
+        }
+      }
+    }
+
+    .user-list-item__btn {
+      @media (min-width: $user_list_item_breakpoint) {
+        display: none;
+      }
+    }
+  }
+}
+
+.user-list-title {
+  font-family: $font_family;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: $user_list_title_color;
+  text-align: center;
+  margin-bottom: 40px;
+  @media (min-width: $user_list_item_breakpoint) {
+    font-size: 35px;
+    line-height: 55px;
+    margin-bottom: 76px;
+  }
+  @media (min-width: 1200px) {}
+}
+
+.user-list-extra {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  @media (min-width: 348px) {
+    justify-content: space-around;
+  }
+  @media (min-width: 1200px) {}
+  @media (min-width: 1500px) {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}
