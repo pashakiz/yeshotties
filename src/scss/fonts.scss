@@ -1,0 +1,38 @@
+/* font-family: "BigshotOne"; */
+/* font-family: "SofiaPro"; */
+
+@font-face {
+  font-family: 'BigshotOne';
+  src: url('../fonts/BigshotOne/BigshotOne-Regular.eot');
+  src: url('../fonts/BigshotOne/BigshotOne-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/BigshotOne/BigshotOne-Regular.woff2') format('woff2'),
+  url('../fonts/BigshotOne/BigshotOne-Regular.woff') format('woff'),
+  url('../fonts/BigshotOne/BigshotOne-Regular.ttf') format('truetype'),
+  url('../fonts/BigshotOne/BigshotOne-Regular.svg#BigshotOne-Regular') format('svg');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'SofiaPro';
+  src: url('../fonts/SofiaPro/SofiaPro-Light.eot');
+  src: url('../fonts/SofiaPro/SofiaPro-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SofiaPro/SofiaPro-Light.woff2') format('woff2'),
+  url('../fonts/SofiaPro/SofiaPro-Light.woff') format('woff'),
+  url('../fonts/SofiaPro/SofiaPro-Light.otf') format('opentype'),
+  url('../fonts/SofiaPro/SofiaPro-Light.svg#SofiaPro-Light') format('svg');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'SofiaPro';
+  src: url('../fonts/SofiaPro/SofiaPro-Medium.eot');
+  src: url('../fonts/SofiaPro/SofiaPro-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SofiaPro/SofiaPro-Medium.woff2') format('woff2'),
+  url('../fonts/SofiaPro/SofiaPro-Medium.woff') format('woff'),
+  url('../fonts/SofiaPro/SofiaPro-Medium.otf') format('opentype'),
+  url('../fonts/SofiaPro/SofiaPro-Medium.svg#SofiaPro-Medium') format('svg');
+  font-style: normal;
+  font-weight: 500;
+}
