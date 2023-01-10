@@ -65,8 +65,6 @@
     height: 909px;
   }
 
-  @include img-mask('../img/bg/mask-header.svg', -1px, -1px, calc(100% + 2px), calc(100% + 2px), cover, 100%);
-
   &.bg1 {
     background-image: url('../img/bg/bg-header-01.jpg');
   }
@@ -339,20 +337,6 @@
       padding: 43px 33px 50px;
       min-height: 235px;
     }
-  }
-
-  &::before {
-    content: '';
-    display: block;
-    width: 124px;
-    height: 95px;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    background-image: url('../img/bg/bg-photo-userfback.svg');
-    position: absolute;
-    z-index: 2;
-    top: -80px;
   }
 
   &::after {
