@@ -1,11 +1,9 @@
 <%= _.template(require('./../includes/header.html'))() %>
   <main class="main">
-    <div class="container container_text">
+    <div class="container container_unsubscribe">
       <div class="row">
-        <div class="col-12 col-xl-4 text-center text-xl-start">
-          <h2>Your <span class="d-none d-xl-block">Subsc<span>-<br></span>riptions</span><span class="d-block d-xl-none">Subscriptions</span></h2>
-        </div>
-        <div class="col-12 col-xl-8">
+        <div class="col">
+          <h2 class="text-center">Your Subscriptions</h2>
           <form action="">
             <div class="customcheck customcheck_switch">
               <input type="checkbox" class="customcheck__input" name="check1" id="switch1" autocomplete="off">

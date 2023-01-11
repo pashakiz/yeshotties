@@ -1,37 +1,37 @@
 /**/$container-xl:              1140px;
 /**/$container-xxl:             1320px;
-/**/$container-xxxl:            1640px;
-/**/$body_bg_color:             #9FB7DE;
+$container-xxxl:            1640px;
+$body_bg_color:             #225C4E;
 /**/$btn_bg_color:              #FFF705;
 /**/$btn_bg_color_hover:        #FFFA72;
 /**/$btn_bg_color_active:       #FFF;
 /**/$bg_dark_1:                 #1E1C1C; //unuse
 /**/$bg_light_1:                #DCDFE3;
 /**/$bg_light_2:                #FFF;
-/**/$font_color:                #FFF;
+$font_color:                #FFF;
 /**/$font_color2:               #525F73;
 /**/$font_color3:               #6388C2;
 /**/$font_color4:               #98A5B9;
-/**/$font_family:               "Inter", sans-serif;
-/**/$font_weight:               400;
-/**/$font_size:                 16px;
-/**/$font_size_mobile:          15px;
-/**/$body_mb:                   69px;
-/**/$body_mb_lg:                69px;
-/**/$body_mb_xs:                69px;
-/**/$font_family2:              "PlayfairDisplay", sans-serif;
-/**/$link_txt_family:           $font_family;
-/**/$link_color:                $btn_bg_color;
-/**/$link_hover_color:          $btn_bg_color_hover;
-/**/$link_active_color:         $font_color;
+$font_family:               "SofiaPro", sans-serif;
+$font_weight:               300;
+$font_size:                 16px;
+$font_size_mobile:          15px;
+$body_mb:                   69px;
+$body_mb_lg:                69px;
+$body_mb_xs:                69px;
+$font_family2:              "BigshotOne", sans-serif;
+$link_txt_family:           $font_family;
+$link_color:                $font_color;
+$link_hover_color:          #278770;
+$link_active_color:         #00C293;
 /**/$link_hover_color1:         #bd7667; //unuse
 /**/$link_hover_color2:         $link_hover_color; //unuse
-/**/$footer_height:             260px;
-/**/$footer_height_lg:          260px;
-/**/$footer_height_xs:          245px;
-/**/$footer_text_color:         $link_color;
-/**/$footer_text_color_hover:   $link_hover_color;
-/**/$footer_text_color_active:  $link_active_color;
+$footer_height:             120px;
+$footer_height_lg:          120px;
+$footer_height_xs:          180px;
+$footer_text_color:         $link_color;
+$footer_text_color_hover:   $link_hover_color;
+$footer_text_color_active:  $link_active_color;
 
 //Form
 /**/$input_bg:                  $bg_light_2;

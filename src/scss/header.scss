@@ -1,8 +1,8 @@
 .header {
   &.header_page {
-    padding: 41px 0 45px;
+    padding: 28px 0 41px; /*- - 64*/
     @media (min-width: 992px) {
-      padding: 100px 0 124px;
+      padding: 58px 0 90px;
     }
   }
 }

@@ -1,13 +1,12 @@
 .logo {
-  font-family: $font_family2;
-  font-weight: 600;
-  font-style: italic;
-  font-size: 20px;
+  width: 139px;
+  height: 26px;
+  background-image: url('../img/icons/logo.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   @media (min-width: 992px) {
-    font-size: 48px;
-  }
-  span {
-    color: $btn_bg_color;
+    width: 391px;
+    height: 73px;
   }
 
   &.logo_main {
