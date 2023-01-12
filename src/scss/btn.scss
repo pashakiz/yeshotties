@@ -1,25 +1,26 @@
 .btn {
   width: 100%;
-  height: 46px;
-  padding: 13px 10px;
+  height: 56px;
+  padding: 15px 10px;
   border-radius: 0;
   background-color: $btn_bg_color;
   border: none;
-  font-family: $font_family;
-  font-size: 17px;
-  font-weight: 700;
-  color: $font_color3;
+  font-family: $font_family2;
+  font-size: 19px;
+  font-weight: 400;
+  color: $font_color;
   line-height: 1;
   text-transform: uppercase;
   text-align: center;
   position: relative;
+  letter-spacing: 2px;
   z-index: 1;
   &:hover {
-    color: $font_color3;
+    color: $font_color;
     background-color: $btn_bg_color_hover;
   }
   &:active {
-    color: $font_color3 !important;
+    color: $font_color !important;
     background-color: $btn_bg_color_active !important;
   }
   &:focus {
@@ -29,9 +30,10 @@
 
   @media (min-width: 992px) {
     width: auto;
-    height: 88px;
-    font-size: 28px;
-    padding: 27px 15px;
+    height: 76px;
+    font-size: 29px;
+    padding: 20px 15px;
+    letter-spacing: 1px;
   }
 
   .btn__icon {
