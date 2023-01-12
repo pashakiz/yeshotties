@@ -32,9 +32,7 @@
 }
 
 .splide_up {
-  .splide__track {
-    @include img-mask('../img/photos/mask.svg', -1px, -1px, calc(100% + 2px), calc(100% + 2px), auto, 0% 0%);
-  }
+  .splide__track {}
   .splide__pagination {
     transform: translateY(-39px);
     margin-bottom: -15px;

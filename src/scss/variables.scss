@@ -7,10 +7,10 @@ $btn_bg_color_hover:        #278770;
 $btn_bg_color_active:       #00C293;
 /**/$bg_dark_1:                 #1E1C1C; //unuse
 $bg_light_1:                #00C293;
-/**/$bg_light_2:                #FFF;
+$bg_light_2:                #FFF;
 $font_color:                #FFF;
-/**/$font_color2:               #525F73;
-/**/$font_color3:               #6388C2;
+$font_color2:               #424242;
+$font_color3:               #878989;
 /**/$font_color4:               #98A5B9;
 $font_family:               "SofiaPro", sans-serif;
 $font_weight:               300;
@@ -34,22 +34,22 @@ $footer_text_color_hover:   $link_hover_color;
 $footer_text_color_active:  $link_active_color;
 
 //Form
-/**/$input_bg:                  $bg_light_2;
-/**/$input_hover_bg:            $input_bg;
-/**/$input_txt_family:          $font_family;
-/**/$input_txt_color:           $font_color3;
-/**/$input_hover_txt_color:     $font_color3;
-/**/$input_placeholder_color:   $font_color4;
-/**/$input_txt_xs_size:         15px;
-/**/$input_txt_xs_lh:           1.5;
-/**/$input_txt_size:            22px;
-/**/$input_txt_lh:              1.5;
-/**/$input_border_color:        $input_bg;
-/**/$input_border:              none;
-/**/$input_hover_border:        $input_border;
-/**/$input_border_radius:       0;
-/**/$textarea_border_radius:    0;
-/**/$textarea_border_radius_mob:0;
+$input_bg:                  $bg_light_2;
+$input_hover_bg:            $input_bg;
+$input_txt_family:          $font_family;
+$input_txt_color:           $font_color3;
+$input_hover_txt_color:     $font_color2;
+$input_placeholder_color:   $btn_bg_color_active;
+$input_txt_xs_size:         16px;
+$input_txt_xs_lh:           1.5;
+$input_txt_size:            22px;
+$input_txt_lh:              1.5;
+$input_border_color:        $input_bg;
+$input_border:              none;
+$input_hover_border:        $input_border;
+$input_border_radius:       0;
+$textarea_border_radius:    0;
+$textarea_border_radius_mob:0;
 
 
 //Bootstrap container width

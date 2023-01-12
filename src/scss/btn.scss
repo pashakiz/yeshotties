@@ -99,15 +99,15 @@
   }
 
   &.btn_3 { //change photo
-    width: 159px;
-    height: 30px;
+    width: 220px;
+    height: 56px;
     padding: 5px 5px;
     border-radius: 0;
     font-family: $font_family;
-    font-weight: 400;
-    font-size: 15px;
-    background-color: $btn_bg_color_active;
-    color: $font_color4;
+    font-weight: 300;
+    font-size: 18px;
+    background-color: $bg_light_2;
+    color: $font_color2;
     text-transform: uppercase;
     border: none;
     display: flex;
@@ -115,17 +115,17 @@
     justify-content: center;
     &:hover {
       background-color: $btn_bg_color_hover;
-      color: $font_color4 !important;
+      color: $font_color2 !important;
     }
     &:active {
       background-color: $btn_bg_color !important;
-      color: $font_color4 !important;
+      color: $font_color !important;
     }
     @media (min-width: 992px) {}
     @media (min-width: 1200px) {
       font-size: 22px;
       padding: 15px 15px;
-      width: 329px;
+      width: 270px;
       height: 70px;
     }
   }

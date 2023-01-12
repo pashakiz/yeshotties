@@ -1,10 +1,10 @@
 .settings-form {
-  padding-top: 79px;
+  padding-top: 30px;
   @media (min-width: 992px) {
-    padding-top: 79px;
+    padding-top: 40px;
   }
   @media (min-width: 1200px) {
-    padding-top: 41px;
+    padding: 0;
     max-width: 530px;
     margin: 0 0 0 auto;
   }
@@ -13,24 +13,17 @@
 .settings-photo {
   margin: 0 auto;
   position: relative;
-  width: 100%;
+  width: calc(100% + 40px);
+  left: -20px;
   @media (min-width: 400px) {
-    width: 280px;
-    max-width: 280px;
-  }
-  @media (min-width: 768px) {
-    width: 500px;
-    max-width: 500px;
+    left: 0;
+    width: 320px;
+    max-width: 320px;
   }
   @media (min-width: 1200px) {
     background-image: none;
-    width: 500px;
-    max-width: 500px;
-    margin: 0;
-  }
-  @media (min-width: 1400px) {
-    width: 640px;
-    max-width: 640px;
+    width: 380px;
+    max-width: 380px;
     margin: 0;
   }
 }
@@ -41,38 +34,27 @@
   justify-content: center;
   width: 100%;
   max-width: 100%;
-  height: 350px;
-  max-height: 350px;
+  height: 445px;
+  max-height: 445px;
   border-radius: 0;
   background-color: $bg_light_1;
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
   position: relative;
-  @include img-mask('../img/photos/mask.svg', -1px, -1px, calc(100% + 2px), calc(100% + 2px), auto, 0% 0%);
-
   @media (min-width: 400px) {
-    height: 246px;
-    max-height: 246px;
-  }
-  @media (min-width: 768px) {
-    height: 456px;
-    max-height: 456px;
+    height: 445px;
+    max-height: 445px;
   }
   @media (min-width: 1200px) {
-    height: 456px;
-    max-height: 456px;
-    margin-bottom: 50px;
-  }
-  @media (min-width: 1400px) {
-    height: 582px;
-    max-height: 582px;
-    margin-bottom: 50px;
+    height: 448px;
+    max-height: 448px;
+    margin-bottom: 30px;
   }
 }
 
 .settings__btn {
-  margin: 0 0 32px 0;
+  margin: 0 0 23px 0;
   @media (min-width: 1200px) {
     margin: 0;
   }
