@@ -16,57 +16,35 @@
   @media (min-width: 400px) {
     max-width: 320px;
   }
-  @media (min-width: 768px) {
-    max-width: 640px;
-  }
   @media (min-width: 1200px) {
-    max-width: 500px;
-    margin: 0 76px 0 0;
-  }
-  @media (min-width: 1400px) {
-    max-width: 640px;
-    margin: 0 100px 0 0;
+    max-width: 380px;
+    margin: 0;
   }
 }
 
 .userprofile-img {
   width: 100%;
   max-width: 100%;
-  height: 368px;
-  max-height: 368px;
+  height: 445px;
+  max-height: 445px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
   @media (min-width: 400px) {
     max-width: 320px;
-    height: 294px;
-    max-height: 294px;
-  }
-  @media (min-width: 768px) {
-    max-width: 640px;
-    max-height: 582px;
-    height: 582px;
+    height: 445px;
+    max-height: 445px;
   }
   @media (min-width: 1200px) {
-    max-width: 500px;
-    max-height: 455px;
-    height: 455px;
-  }
-  @media (min-width: 1400px) {
-    max-width: 640px;
-    max-height: 582px;
-    height: 582px;
+    max-width: 380px;
+    max-height: 448px;
+    height: 448px;
   }
 }
 
 
 .userprofile__btn {
-  transform: translateY(-6px);
-  margin-bottom: -6px;
-  @media (min-width: 992px) {
-    transform: translateY(-20px);
-    margin-bottom: -20px;
-  }
+  @media (min-width: 992px) {}
 }
 
 .userprofile__info {
@@ -75,60 +53,42 @@
   @media (min-width: 400px) {
     max-width: 320px;
   }
-  @media (min-width: 768px) {
-    max-width: 640px;
-    padding: 0;
-  }
   @media (min-width: 1200px) {
-    border-radius: 26px 26px 0 0;
+    max-width: 470px;
+    max-height: 448px;
     margin: 0;
   }
 }
 
 .userprofile__data {
-  padding: 21px 15px 65px;
-  background-color: $bg_light_1;
-  @media (min-width: 768px) {
-    padding: 35px 60px 65px;
-  }
+  padding: 21px 20px 40px;
+  background-color: $btn_bg_color_hover;
   @media (min-width: 1200px) {
-    border-radius: 26px 26px 0 0;
+    padding: 46px 40px 35px;
   }
 }
 
 .userprofile__row {
-  color: $font_color2;
+  color: $font_color;
   font-family: $font_family;
   line-height: 1;
-  margin-bottom: 27px;
+  margin-bottom: 31px;
   text-align: center;
   @media (min-width: 1200px) {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
     text-align: left;
-    margin-bottom: 38px;
+    margin-bottom: 44px;
   }
 }
 
 .userprofile__name {
-  font-family: $font_family2;
-  font-weight: 600;
-  font-style: italic;
-  font-size: 30px;
-  margin: 0 0 20px 0;
+  font-family: $font_family;
+  font-weight: 500;
+  font-size: 21px;
+  margin: 0 0 10px 0;
   text-transform: uppercase;
   @media (min-width: 1200px) {
     font-size: 32px;
-    margin: 0;
-  }
-}
-.userprofile__age {
-  display: inline-block;
-  padding-left: 15px;
-  transform: translateY(-4px);
-  @media (min-width: 1200px) {
-    transform: translateY(-6px);
+    margin: 0 0 30px 0;
   }
 }
 
@@ -143,10 +103,10 @@
 
 .userprofile__loc {
   font-family: $font_family;
-  font-weight: 400;
-  font-size: 15px;
+  font-weight: 300;
+  font-size: 13px;
   @media (min-width: 1200px) {
-    font-size: 17px;
+    font-size: 19px;
   }
 }
 
@@ -160,43 +120,48 @@
   .compatibility__progress {
     &.progress {
       border-radius: 0;
-      background-color: $bg_light_2;
+      background-color: $btn_bg_color_hover;
+      border: 1px solid $btn_bg_color_active;
       width: 80px;
-      height: 28px;
+      height: 30px;
       position: relative;
       @media (min-width: 1200px) {
-        width: 90px;
-        height: 28px;
+        width: 110px;
+        height: 45px;
       }
       .progress-bar {
-        color: $font_color2;
+        color: $font_color;
         font-weight: 500;
-        font-style: italic;
-        font-size: 15px;
-        background-color: $btn_bg_color;
+        font-size: 17px;
+        background-color: $btn_bg_color_active;
         @media (min-width: 1200px) {
-          font-size: 16px;
+          font-size: 22px;
         }
         .progress-title {
           position: absolute;
           width: 100%;
           text-align: center;
+          top: 1px;
+          @media (min-width: 1200px) {
+            top: 3px;
+          }
         }
       }
     }
   }
 
   .compatibility__title {
-    font-family: $font_family2;
-    color: $font_color2;
-    font-weight: 600;
-    font-style: italic;
+    font-family: $font_family;
+    color: $font_color;
+    font-weight: 300;
     font-size: 14px;
-    margin-bottom: 14px;
+    margin-bottom: 10px;
     text-transform: uppercase;
+    text-align: center;
     @media (min-width: $user_list_item_breakpoint) {
-      font-size: 16px;
-      margin-bottom: 17px;
+      text-align: left;
+      font-size: 19px;
+      margin-bottom: 25px;
     }
   }
 
@@ -237,68 +202,52 @@
 .user-profile-title {
   font-family: $font_family;
   color: $font_color;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 27px;
-  margin-bottom: 25px;
-  //text-transform: uppercase;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  margin-bottom: 21px;
+  text-transform: uppercase;
+  text-align: center;
   @media (min-width: 992px) {}
   @media (min-width: 1200px) {
-    font-size: 32px;
-    line-height: 39px;
+    font-size: 22px;
+    margin-bottom: 41px;
+    text-align: left;
   }
   &.user-profile-title_about {
-    color: $btn_bg_color;
-    font-size: 22px;
-    margin-bottom: 22px;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 28px;
     @media (min-width: 992px) {}
     @media (min-width: 1200px) {
-      font-size: 32px;
-      margin-bottom: 13px;
+      font-size: 24px;
+      margin-bottom: 19px;
     }
   }
 }
 
 .user-profile-about {
-  font-weight: 400;
+  text-align: center;
+  color: $font_color;
+  font-weight: 300;
   font-size: 15px;
-  line-height: 26px;
+  line-height: 24px;
   position: relative;
-  padding: 42px 20px 20px;
+  padding: 40px 20px 0;
   background-color: $body_bg_color;
-  border-radius: 26px;
-  transform: translateY(-26px);
-  @media (min-width: 768px) {
-    padding: 43px 60px 40px;
+  margin: 0 auto;
+  @media (min-width: 400px) {
+    max-width: 320px;
   }
   @media (min-width: 1200px) {
-    font-size: 16px;
-    margin-bottom: 40px;
+    text-align: left;
+    max-width: 100%;
+    padding: 40px 0 0;
   }
   p {
-    color: $font_color;
-    line-height: 26px;
+    line-height: 24px;
     @media (min-width: 992px) {
-      color: $font_color;
       line-height: 24px;
     }
   }
 }
-
-.user-profile-gallery {
-  margin: 45px 0 20px;
-  flex-wrap: wrap;
-  .user-profile-gallery__item {
-    width: 111px;
-    height: 144px;
-    border-radius: 100px;
-    overflow: hidden;
-    cursor: pointer;
-    margin: 0;
-  }
-  .user-profile-gallery__img {
-    width: 100%;
-    height: auto;
-  }
-}
-

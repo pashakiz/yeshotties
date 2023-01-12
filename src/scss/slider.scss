@@ -7,38 +7,43 @@
 
 .splide__pagination {
   padding-left: 0;
+  overflow: hidden;
+  height: 15px;
+  @media (min-width: 992px) {
+    height: 30px;
+  }
 }
 
 .splide__pagination__page {
-  background: $body_bg_color;
-  border: 0;
+  background: transparent;
+  border: 1px solid $bg_light_1;
   border-radius: 0;
   display: inline-block;
-  width: 9px;
-  height: 9px;
-  margin: 0 7px;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
   padding: 0;
   position: relative;
   transition: background-color .2s ease, color .2s ease;
   @media (min-width: 992px) {
-    width: 15px;
-    height: 15px;
-    margin: 0 12px;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
   }
 
   &.is-active {
-    background: $btn_bg_color;
+    background: $bg_light_1;
   }
 }
 
 .splide_up {
   .splide__track {}
   .splide__pagination {
-    transform: translateY(-39px);
+    transform: translateY(-30px);
     margin-bottom: -15px;
     @media (min-width: 992px) {
-      transform: translateY(-81px);
-      margin-bottom: -18px;
+      transform: translateY(-58px);
+      margin-bottom: -30px;
     }
   }
   .splide__pagination__page {}
