@@ -10,6 +10,32 @@ body {
   }
 }
 
+.bg-pattern {
+  &.bg-pattern1 {
+    background-repeat: no-repeat;
+    background-image: url('../img/bg/bg-pattern1m.svg');
+    background-position: calc(100% + 11px) 0;
+    background-size: 60px;
+    @media (min-width: 992px) {
+      background-image: url('../img/bg/bg-pattern1.svg');
+      background-position: 100% 0;
+      background-size: 250px;
+    }
+  }
+  &.bg-pattern2 {
+    background-repeat: no-repeat;
+    background-image: url('../img/bg/bg-pattern2.svg');
+    background-position: 25% 25%;
+    background-size: 50%
+  }
+  &.bg-pattern3 {
+    background-repeat: no-repeat;
+    background-image: url('../img/bg/bg-pattern3.svg');
+    background-position: 50% 188px;
+    background-size: 100%;
+  }
+}
+
 .container {
   @include make-container(40px);
   @media (min-width: 768px) {
