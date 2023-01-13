@@ -11,6 +11,7 @@ body {
 }
 
 .bg-pattern {
+
   &.bg-pattern1 {
     background-repeat: no-repeat;
     background-image: url('../img/bg/bg-pattern1m.svg');
@@ -22,18 +23,41 @@ body {
       background-size: 250px;
     }
   }
+
   &.bg-pattern2 {
-    background-repeat: no-repeat;
-    background-image: url('../img/bg/bg-pattern2.svg');
-    background-position: 25% 25%;
-    background-size: 50%
+    @media (min-width: 992px) {
+      background-repeat: no-repeat;
+      background-image: url('../img/bg/bg-pattern2.svg');
+      background-position: 0% 200px;
+      background-size: 55%;
+    }
+    @media (min-width: 1200px) {
+      background-position: 0% 190px;
+      background-size: 60%
+    }
+    @media (min-width: 1300px) {
+      background-position: 8% 200px;
+      background-size: 55%
+    }
+    @media (min-width: 1400px) {
+      background-position: 0% 185px;
+      background-size: 60%
+    }
+    @media (min-width: 1650px) {
+      background-position: 6% 175px;
+      background-size: 60%
+    }
   }
+
   &.bg-pattern3 {
-    background-repeat: no-repeat;
-    background-image: url('../img/bg/bg-pattern3.svg');
-    background-position: 50% 188px;
-    background-size: 100%;
+    @media (min-width: 992px) {
+      background-repeat: no-repeat;
+      background-image: url('../img/bg/bg-pattern2.svg');
+      background-position: 50% 188px;
+      background-size: 100%;
+    }
   }
+
 }
 
 .container {

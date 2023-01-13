@@ -1,8 +1,143 @@
 .header {
   &.header_page {
-    padding: 28px 0 41px; /*- - 64*/
+    //padding: 28px 0 41px;
     @media (min-width: 992px) {
-      padding: 58px 0 90px;
+      //padding: 58px 0 90px;
     }
+  }
+}
+
+.firstscreen {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 45px;
+  background-image: url('../img/bg/bg-mob.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  min-height: 628px;
+  @media (min-width: 992px) {
+    background-image: none;
+    flex-direction: row;
+    height: 280px;
+  }
+  @media (min-width: 1200px) {
+    height: 363px;
+  }
+  @media (min-width: 1400px) {
+    height: 418px;
+  }
+  @media (min-width: 1650px) {
+    height: 526px;
+  }
+  @media (min-width: 1920px) {
+    height: 526px;
+  }
+}
+
+.firstscreen__bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  background-image: url('../img/bg/bg-pattern0.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: 100%;
+  @media (min-width: 360px) {
+    background-position: 50% 23%;
+  }
+  @media (min-width: 440px) {
+    background-position: 50% 32%;
+  }
+  @media (min-width: 600px) {
+    background-position: 50% 38%;
+  }
+  @media (min-width: 992px) {
+    display: none;
+  }
+}
+
+.firstscreen__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  @media (min-width: 992px) {
+    position: static;
+  }
+}
+
+.firstscreen__header { /*del?*/
+  padding: 0;
+}
+
+.firstscreen__info {
+  display: none;
+  width: 100%;
+  @media (min-width: 992px) {}
+
+  &.firstscreen__info1 {}
+
+  &.firstscreen__info2 {
+    @media (min-width: 768px) {}
+    @media (min-width: 992px) {}
+    @media (min-width: 1200px) {}
+    @media (min-width: 1300px) {}
+    @media (min-width: 1400px) {}
+    @media (min-width: 1650px) {}
+  }
+
+  &.firstscreen__info3 {}
+}
+
+.firstscreen__img {
+  display: none;
+  @media (min-width: 992px) {
+    display: block;
+    width: 460px;
+    height: 280px;
+    background-image: url('../img/bg/bg-login.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    position: relative;
+  }
+  @media (min-width: 1200px) {
+    width: 600px;
+    height: 363px;
+  }
+  @media (min-width: 1400px) {
+    width: 690px;
+    height: 418px;
+  }
+  @media (min-width: 1650px) {
+    width: 870px;
+    height: 526px;
+  }
+}
+
+.firstscreen__img-icon {
+  display: block;
+  background-image: url('../img/icons/hot.svg');
+  background-repeat: no-repeat;
+  position: absolute;
+
+  @media (min-width: 992px) {
+    width: 56px;
+    height: 100px;
+    top: -68px;
+    left: -18px;
+  }
+  @media (min-width: 1750px) {
+    width: 96px;
+    height: 172px;
+    top: -113px;
+    left: -32px;
   }
 }

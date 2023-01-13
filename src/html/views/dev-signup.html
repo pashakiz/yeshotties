@@ -1,53 +1,48 @@
 <%= _.template(require('./../includes/header-index.html'))() %>
+  <script>
+    document.body.classList.remove('bg-pattern3');
+    document.body.classList.add('bg-pattern2');
+  </script>
   <main class="main">
     <header class="firstscreen">
-      <div class="firstscreen__bg bg1"></div>
+      <div class="firstscreen__bg"></div>
       <div class="firstscreen__content">
         <div class="container container_xxxl">
-          <div class="firstscreen__content-inner">
-            <div class="firstscreen__info firstscreen__info3" style="display: block;">
-              <div class="firstscreen__header">
-                <div class="logo logo_main">Grand<span>Hook</span>Up</div>
+          <div class="firstscreen__info firstscreen__info3" style="display: block;">
+            <div class="logo"></div>
+            <div class="row">
+              <div class="col col-lg-6 d-none d-lg-block">
+                <div class="firstscreen__img">
+                  <div class="firstscreen__img-icon"></div>
+                </div>
               </div>
-              <div class="h1_login d-lg-none">Sign up&nbsp;<br class="d-md-none"><span class="colortitle1">to unlock</span>&nbsp;<br class="d-md-none">girls</div>
-              <div class="h1_login d-none d-lg-block">Sign up<br><span class="h1_login-sub">to <span class="colortitle1">unlock girls</span></span></div>
-              <form action="">
-                <div class="form-group form-group_login">
-                  <input class="form-control form-control_login" type="text" placeholder="Email">
-                </div>
-                <div class="form-group form-group_login">
-                  <input class="form-control form-control_login" type="password" placeholder="Password">
-                </div>
-                <div class="form-group form-group_login form-group_login-btn">
-                  <button class="btn-login btn btn_w100">Sign Up</button>
-                </div>
-              </form>
+              <div class="col col-lg-6">
+                <div class="h1_login d-lg-none">Sign up<br>to unlock<br>girls</div>
+                <div class="h1_login d-none d-lg-block">Sign up to<br>unlock girls</div>
+                <form action="">
+                  <div class="form-group form-group_login">
+                    <input class="form-control form-control_login" type="text" placeholder="Email">
+                  </div>
+                  <div class="form-group form-group_login">
+                    <input class="form-control form-control_login" type="password" placeholder="Password">
+                  </div>
+                  <div class="form-group form-group_login form-group_login-btn">
+                    <button class="btn-login btn btn_w100">Sign Up</button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </header>
+
+
     <section class="secondscreen secondscreen_2" style="display: block;">
-      <div class="d-xl-none">
-        <div class="timer">
-          <div class="timer_inner">
-            <div class="timer__title">Limited chance</div>
-            <div class="countdown-js" data-countdown-time="0-15-0"></div>
-          </div>
-        </div>
-        <div class="container container_xxxl">
-          <div class="h1_login2">to Look at&nbsp;<br class="d-sm-none"><span class="colortitle2">these</span> cuties</div>
-        </div>
-      </div>
       <div class="container container_xxxl">
-        <div class="d-none d-xl-flex align-items-xl-center mb-xl-68">
-          <div class="timer">
-            <div class="timer_inner">
-              <div class="timer__title">Limited chance</div>
-              <div class="countdown-js" data-countdown-time="0-15-0"></div>
-            </div>
-          </div>
-          <div class="h1_login2">to Look at <span class="colortitle2">these</span> cuties</div>
+        <div class="timer">
+          <div class="timer__title">Limited chance</div>
+          <div class="countdown-js" data-countdown-time="0-15-0"></div>
         </div>
         <div class="splide splide_ulist" aria-label="Profiles">
           <div class="splide__track">

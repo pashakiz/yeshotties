@@ -4,24 +4,25 @@
   background-image: url('../img/icons/logo.svg');
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  margin: 28px auto 41px;
   @media (min-width: 992px) {
+    margin: 58px auto 90px;
     width: 391px;
     height: 73px;
   }
 
   &.logo_main {
-    font-size: 20px;
+    width: 280px;
+    height: 387px;
+    background-image: url('../img/icons/logo-mob.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin: 61px 0 39px;
     @media (min-width: 992px) {
-      font-size: 25px;
-    }
-    @media (min-width: 1200px) {
-      font-size: 30px;
-    }
-    @media (min-width: 1400px) {
-      font-size: 35px;
-    }
-    @media (min-width: 1650px) {
-      font-size: 48px;
+      background-image: url('../img/icons/logo.svg');
+      margin: 58px 0 90px;
+      width: 391px;
+      height: 73px;
     }
   }
 
