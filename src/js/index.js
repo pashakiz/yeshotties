@@ -69,11 +69,27 @@ if (document.querySelector('.splide_ulist') !== null) {
     arrows     : false,
     autoHeight : true,
     autoWidth  : true,
-    gap        : '50px',
+    gap        : '60px',
     //perPage    : 4,
     breakpoints: {
       992: {
-        gap    : '20px',
+        gap    : '10px',
+      },
+    },
+  } ).mount();
+}
+
+if (document.querySelector('.splide_ulist-extra') !== null) {
+  new Splide( '.splide_ulist-extra', {
+    type       : 'loop',
+    arrows     : false,
+    autoHeight : true,
+    autoWidth  : true,
+    gap        : '60px',
+    //perPage    : 4,
+    breakpoints: {
+      992: {
+        gap    : '10px',
       },
     },
   } ).mount();

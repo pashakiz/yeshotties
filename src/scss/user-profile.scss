@@ -86,6 +86,7 @@
   font-size: 21px;
   margin: 0 0 10px 0;
   text-transform: uppercase;
+  @include overflow-ellipsis;
   @media (min-width: 1200px) {
     font-size: 32px;
     margin: 0 0 30px 0;
@@ -105,6 +106,7 @@
   font-family: $font_family;
   font-weight: 300;
   font-size: 13px;
+  @include overflow-ellipsis;
   @media (min-width: 1200px) {
     font-size: 19px;
   }
@@ -166,32 +168,34 @@
   }
 
   &.compatibility_list {
-    padding: 0 10px 14px;
-    @media (min-width: $user_list_item_breakpoint) {
-      padding: 0 20px 38px;
-    }
     .compatibility__progress {
       &.progress {
         width: 34px;
-        height: 13px;
+        height: 17px;
         @media (min-width: $user_list_item_breakpoint) {
-          width: 90px;
-          height: 28px;
+          width: 70px;
+          height: 29px;
         }
         .progress-bar {
-          font-size: 7px;
+          font-size: 9px;
           @media (min-width: $user_list_item_breakpoint) {
             font-size: 16px;
+          }
+          .progress-title {
+            top: 1px;
+            @media (min-width: $user_list_item_breakpoint) {
+              top: 0;
+            }
           }
         }
       }
     }
     .compatibility__title {
-      font-size: 6px;
-      margin-bottom: 6px;
+      font-size: 7px;
+      margin-bottom: 9px;
       @media (min-width: $user_list_item_breakpoint) {
-        font-size: 16px;
-        margin-bottom: 17px;
+        font-size: 14px;
+        margin-bottom: 15px;
       }
     }
   }
@@ -208,6 +212,7 @@
   margin-bottom: 21px;
   text-transform: uppercase;
   text-align: center;
+  @include overflow-ellipsis;
   @media (min-width: 992px) {}
   @media (min-width: 1200px) {
     font-size: 22px;

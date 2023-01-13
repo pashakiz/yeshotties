@@ -58,8 +58,8 @@ $textarea_border_radius_mob:0;
 }
 
 //User List page wider
-/**/$user_list_item_breakpoint: 992px;
-/**/$user_list_title_color:     $btn_bg_color;
+$user_list_item_breakpoint: 992px;
+$user_list_title_color:     $font_color;
 
 /**/
 @mixin circle($diameter, $background-color) {
@@ -86,4 +86,24 @@ $textarea_border_radius_mob:0;
     background-repeat: no-repeat;
     z-index: 1;
   }
+}
+
+@mixin color-filter($color, $alpha) {
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color, $alpha);
+  }
+}
+
+@mixin overflow-ellipsis() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
