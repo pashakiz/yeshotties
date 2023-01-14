@@ -196,11 +196,14 @@ h1 {
   font-family: $font_family2;
   color: $bg_light_1;
   font-weight: 400;
-  font-size: 44px;
+  font-size: 43px;
   line-height: 71px;
   margin: 0 0 41px;
   text-transform: uppercase;
   text-align: center;
+  @media (min-width: 380px) {
+    font-size: 44px;
+  }
   @media (min-width: 450px) {
     font-size: 56px;
     line-height: 77px;
@@ -230,6 +233,12 @@ h1 {
   }
   span {
     letter-spacing: 4px;
+    @media (min-width: 992px) {
+      letter-spacing: 7px;
+    }
+    @media (min-width: 1650px) {
+      letter-spacing: 5px;
+    }
   }
 }
 
