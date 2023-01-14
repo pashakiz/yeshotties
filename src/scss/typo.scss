@@ -193,112 +193,107 @@ h1 {
 }
 
 .h1_login {
-  font-family: $font_family;
-  color: $font_color;
-  font-weight: 700;
-  font-size: 39px;
-  line-height: 50px;
-  margin: 0 0 30px;
+  font-family: $font_family2;
+  color: $bg_light_1;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 71px;
+  margin: 0 0 41px;
   text-transform: uppercase;
-  @media (min-width: 323px) {
-    font-size: 41px;
+  text-align: center;
+  @media (min-width: 450px) {
+    font-size: 56px;
+    line-height: 77px;
   }
   @media (min-width: 992px) {
-    font-size: 35px;
-    line-height: 40px;
-    margin: 0 0 20px;
-  }
-  @media (min-width: 1200px) {
     font-size: 40px;
     line-height: 50px;
-  }
-  @media (min-width: 1400px) {
-    font-size: 50px;
-    line-height: 56px;
-  }
-  @media (min-width: 1650px) {
-    font-size: 60px;
-    line-height: 68px;
-  }
-  @media (min-width: 1920px) {
-    font-size: 78px;
-    line-height: 96px;
     margin: 0 0 25px;
   }
-  .h1_login-sub {
-    @media (min-width: 992px) {
-      font-size: 40px;
-      line-height: 48px;
-    }
-    @media (min-width: 1200px) {
-      font-size: 45px;
-      line-height: 55px;
-    }
-    @media (min-width: 1400px) {
-      font-size: 56px;
-      line-height: 64px;
-    }
-    @media (min-width: 1650px) {
-      font-size: 72px;
-      line-height: 80px;
-    }
-    @media (min-width: 1920px) {
-      font-size: 86px;
-      line-height: 104px;
-    }
+  @media (min-width: 1200px) {
+    font-size: 55px;
+    line-height: 70px;
+    margin: 0 0 40px;
+  }
+  @media (min-width: 1400px) {
+    font-size: 55px;
+    line-height: 70px;
+  }
+  @media (min-width: 1650px) {
+    font-size: 67px;
+    line-height: 81px;
+  }
+  @media (min-width: 1920px) {
+    font-size: 67px;
+    line-height: 81px;
+    margin: 0 0 40px;
+  }
+  span {
+    letter-spacing: 4px;
+  }
+}
+
+.title-slider-login {
+  display: none;
+  @media (min-width: 992px) {
+    display: block;
+    font-family: $font_family2;
+    color: $font_color;
+    font-weight: 400;
+    font-size: 49px;
+    line-height: 77px;
+    text-transform: uppercase;
+    margin: 0 0 32px;
+    letter-spacing: 2px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 61px;
+    margin: 0;
+    transform: translateY(-10px);
+    letter-spacing: 0;
+  }
+}
+.title-slider-login__row1 {
+  @media (min-width: 992px) {
+    letter-spacing: 2px;
+  }
+}
+.title-slider-login__row2 {
+  @media (min-width: 992px) {}
+  @media (min-width: 1200px) {
+    font-size: 54px;
+  }
+}
+.title-slider-login__row3 {
+  @media (min-width: 992px) {}
+  @media (min-width: 1200px) {
+    font-size: 49px;
   }
 }
 
 .h1_login2 {
-  font-family: $font_family;
-  color: $btn_bg_color;
-  font-weight: 700;
-  font-size: 33px;
+  font-family: $font_family2;
+  color: $font_color;
+  font-weight: 400;
+  font-size: 31px;
   line-height: 40px;
-  margin: 22px 0 31px;
+  margin: 20px 0 30px;
   text-transform: uppercase;
+  letter-spacing: 2px;
   @media (min-width: 992px) {
-    font-size: 35px;
-    line-height: 40px;
+    font-size: 49px;
+    line-height: 77px;
   }
   @media (min-width: 1200px) {
-    font-size: 40px;
-    line-height: 50px;
-    margin: 0 auto;
-  }
-  @media (min-width: 1400px) {
-    font-size: 50px;
-    line-height: 56px;
-  }
-  @media (min-width: 1650px) {
-    font-size: 65px;
-    line-height: 70px;
-  }
-  @media (min-width: 1920px) {
-    font-size: 70px;
-    line-height: 85px;
+    font-size: 61px;
+    line-height: 77px;
   }
 
   &.h1_login2_my {
-    margin: 81px 0 31px;
+    margin: 66px 0 38px;
     @media (min-width: 1200px) {
-      margin: 170px 0 81px;
+      margin: 138px 0 71px;
     }
-  }
-}
-
-.colortitle1 {
-  color: $btn_bg_color;
-}
-
-.colortitle2 {
-  color: $font_color;
-}
-
-.colortitle2xs {
-  color: $font_color;
-  @media (min-width: 1200px) {
-    color: $btn_bg_color;
   }
 }
 

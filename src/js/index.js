@@ -103,8 +103,8 @@ if (document.querySelector('.splide_fback') !== null) {
     autoWidth  : true,
     gap        : '70px',
     breakpoints: {
-      992: {
-        gap    : '23px',
+      1200: {
+        gap    : '20px',
       },
     },
   } ).mount();

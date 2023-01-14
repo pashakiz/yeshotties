@@ -20,19 +20,9 @@
   @media (min-width: 992px) {
     background-image: none;
     flex-direction: row;
-    height: 280px;
-  }
-  @media (min-width: 1200px) {
-    height: 363px;
-  }
-  @media (min-width: 1400px) {
-    height: 418px;
-  }
-  @media (min-width: 1650px) {
-    height: 526px;
-  }
-  @media (min-width: 1920px) {
-    height: 526px;
+    height: auto;
+    min-height: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -101,7 +91,7 @@
   @media (min-width: 992px) {
     display: block;
     width: 460px;
-    height: 280px;
+    height: 324px;
     background-image: url('../img/bg/bg-login.jpg');
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -109,12 +99,12 @@
     position: relative;
   }
   @media (min-width: 1200px) {
-    width: 600px;
-    height: 363px;
+    width: 542px;
+    height: 490px;
   }
   @media (min-width: 1400px) {
-    width: 690px;
-    height: 418px;
+    width: 720px;
+    height: 490px;
   }
   @media (min-width: 1650px) {
     width: 870px;
@@ -139,5 +129,21 @@
     height: 172px;
     top: -113px;
     left: -32px;
+  }
+}
+
+.firstscreen__cta {
+  @media (min-width: 992px) {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+  @media (min-width: 1200px) {
+    max-width: 480px;
+  }
+  @media (min-width: 1400px) {
+    max-width: 470px;
+  }
+  @media (min-width: 1650px) {
+    max-width: 530px;
   }
 }
