@@ -17,10 +17,10 @@
     background-image: url('../img/icons/logo-mob.svg');
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    margin: 61px 0 39px;
+    margin: 61px auto 39px;
     @media (min-width: 992px) {
       background-image: url('../img/icons/logo.svg');
-      margin: 58px 0 90px;
+      margin: 58px auto 90px;
       width: 391px;
       height: 73px;
     }

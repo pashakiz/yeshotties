@@ -72,13 +72,20 @@
   width: 100%;
   @media (min-width: 992px) {}
 
-  &.firstscreen__info1 {}
+  &.firstscreen__info1 {
+    max-width: 500px;
+    margin: 0 auto;
+    @media (min-width: 768px) {}
+    @media (min-width: 992px) {
+      max-width: none;
+      margin: 0;
+    }
+  }
 
   &.firstscreen__info2 {
     @media (min-width: 768px) {}
     @media (min-width: 992px) {}
     @media (min-width: 1200px) {}
-    @media (min-width: 1300px) {}
     @media (min-width: 1400px) {}
     @media (min-width: 1650px) {}
   }

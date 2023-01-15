@@ -49,16 +49,6 @@
   &.btn_1 { //index
     display: block;
     width: 100%;
-    max-width: 538px;
-    @media (min-width: 992px) {
-      width: auto;
-      height: 56px;
-    }
-    @media (min-width: 1400px) {
-      width: 100%;
-      margin: 0;
-      height: 76px;
-    }
   }
 
   &.btn-login {
