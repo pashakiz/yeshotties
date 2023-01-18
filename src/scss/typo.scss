@@ -1,170 +1,40 @@
 h1 {
-  font-family: $font_family;
-  font-weight: 700;
-  font-size: 44px;
-  line-height: 53px;
-  color: $font_color;
-  margin-bottom: 34px;
+  font-family: $font_family2;
+  font-weight: 400;
+  font-size: 247px;
+  line-height: 1.2;
+  color: $bg_light_3;
+  margin: 0;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
   @media (min-width: 1920px) {
-    font-size: 86px;
-    line-height: 104px;
-    margin-bottom: 55px;
+    font-size: 247px;
   }
 }
 
 .h1-index {
-  display: flex;
-  flex-direction: column;
-  font-family: $font_family;
-  color: $font_color;
-  font-weight: 700;
-  font-size: 44px;
-  line-height: 53px;
-  margin: 0 0 18px;
-  text-transform: uppercase;
-  position: relative;
-  @media (min-width: 768px) {
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: none;
+  @media (min-width: 992px) {
+    display: block;
+    font-size: 140px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -100px;
   }
   @media (min-width: 1200px) {
-    margin: 0 0 30px;
+    font-size: 170px;
+    margin-top: -120px;
   }
   @media (min-width: 1400px) {
-    margin: 0 0 40px;
+    font-size: 200px;
+    margin-top: -140px;
   }
   @media (min-width: 1650px) {
-    font-size: 86px;
-    line-height: 104px;
-    margin: 0 0 57px;
-  }
-
-  &::before {
-    @media (min-width: 768px) {
-      content: '“';
-      position: absolute;
-      top: -3px;
-      left: -25px;
-      line-height: 1;
-      font-size: 44px;
-    }
-    @media (min-width: 1400px) {
-      top: -3px;
-      left: -40px;
-      font-size: 65px;
-    }
-    @media (min-width: 1650px) {
-      top: -3px;
-      left: -50px;
-      font-size: 83px;
-    }
-  }
-
-  .h1-index__row1 {
-    font-size: 44px;
-    line-height: 53px;
-    @media (min-width: 768px) {
-      width: 150px;
-    }
-    @media (min-width: 1200px) {
-      width: 168px;
-      font-size: 50px;
-      line-height: 62px;
-    }
-    @media (min-width: 1400px) {
-      width: 225px;
-      font-size: 66px;
-      line-height: 75px;
-    }
-    @media (min-width: 1650px) {
-      width: 285px;
-      font-size: 86px;
-      line-height: 104px;
-    }
-  }
-  .h1-index__row2 {
-    font-size: 35px;
-    line-height: 1;
-    color: $btn_bg_color;
-    @media (min-width: 768px) {
-      width: 140px;
-      line-height: 52px;
-    }
-    @media (min-width: 1200px) {
-      width: 180px;
-      font-size: 44px;
-      line-height: 61px;
-    }
-    @media (min-width: 1400px) {
-      width: 250px;
-      font-size: 62px;
-      line-height: 73px;
-    }
-    @media (min-width: 1650px) {
-      width: 290px;
-      font-size: 76px;
-      line-height: 102px;
-      letter-spacing: -4px;
-    }
-    span {
-      text-transform: none;
-      font-size: 41px;
-      @media (min-width: 1200px) {
-        font-size: 50px;
-      }
-      @media (min-width: 1400px) {
-        font-size: 70px;
-      }
-      @media (min-width: 1650px) {
-        font-size: 92px;
-        letter-spacing: 0;
-      }
-    }
-  }
-  .h1-index__row3 {
-    font-size: 49px;
-    line-height: 59px;
-    position: relative;
-    margin: 8px 0 0;
-    @media (min-width: 768px) {
-      font-size: 58px;
-      line-height: 66px;
-      margin: 0;
-    }
-    @media (min-width: 1200px) {
-      font-size: 66px;
-      line-height: 80px;
-    }
-    @media (min-width: 1400px) {
-      font-size: 90px;
-      line-height: 100px;
-    }
-    @media (min-width: 1650px) {
-      font-size: 110px;
-      line-height: 133px;
-    }
-
-    &::after {
-      @media (min-width: 768px) {
-        content: '”';
-        position: absolute;
-        bottom: -22px;
-        right: -30px;
-        line-height: 1;
-        font-size: 44px;
-      }
-      @media (min-width: 1400px) {
-        bottom: -28px;
-        right: -40px;
-        font-size: 65px;
-      }
-      @media (min-width: 1650px) {
-        bottom: -34px;
-        right: -50px;
-        font-size: 83px;
-      }
-    }
+    font-size: 247px;
+    margin-top: -170px;
   }
 }
 
